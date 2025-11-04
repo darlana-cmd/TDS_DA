@@ -109,19 +109,69 @@ body {
 
 .card-membros {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 80%;
-    width: 80%;
+    width: 60%;
     background-color: aliceblue;
-    border-radius: 70px;
+    border-radius: 85px;
 }
 
 .card-direito {
-    height: 50%;
-    width: 50%;
+    height: 269px;
+    width: 404px;
     background-image: url('./imagens/Gatinho.se.lembendo.jpg');
     background-size: cover;
+    border-radius: 50px;
 }
 
-.card-esquerdo {}
+.card-esquerdo {
+    font-size: 34px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+
+.botao-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 77px;
+    width: 378px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-conterni {
+    height: 1280;
+    margin-top: 148px;
+    display: flex;
+    justify-content: center;
+    margin: 184px 60px 0px 60px;
+
+}
+
+.card-cachorro2 {
+
+    width: 40%;
+}
+
+.card-cachorro2 img{
+    height: 614px;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.card-texto {
+    margin: 0px;
+    font-size: 24px;
+    width: 50%;
+    margin-left: 50;
+
+}
+
+.card-texto h3, p{
+    color: #5c5c5c;
+}
