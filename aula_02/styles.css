@@ -29,11 +29,12 @@ body {
     font-weight: bold;
 }
 
-#cabecalho p {
+#logo {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     text-decoration: underline overline;
     cursor: pointer;
+    color: #ffffff;
 }
 
 .pesquisa {
@@ -141,7 +142,9 @@ body {
     color: #ffffff;
     background-color: black;
     border-radius: 70px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    user-select: none;
+  
 }
 
 .card-conterni {
@@ -149,19 +152,21 @@ body {
     margin-top: 148px;
     display: flex;
     justify-content: center;
-    margin: 184px 60px 0px 60px;
+    margin: 184px 60px 5px 60px;
+    padding: 50px;
 
 }
 
 .card-cachorro2 {
-
+    text-align: center;
     width: 40%;
 }
 
 .card-cachorro2 img{
-    height: 614px;
-    width: 80%;
+    height: 800px;
+    width: 700px;
     border-radius: 20px;
+
 }
 
 .card-texto {
@@ -169,9 +174,108 @@ body {
     font-size: 24px;
     width: 50%;
     margin-left: 50;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 
 }
 
-.card-texto h3, p{
-    color: #5c5c5c;
+.card-texto h2{
+    font-size: 31px;
+    font-weight: bold;
+    margin-block-start: 1px;
+}
+
+.card-texto h3,
+.card-texto p{
+    font-size: 28px;
+   color: #5c5c5c;
+}
+
+.rodape{
+ background-color: black;
+ height: 637px;
+ width: 100%;
+}
+
+.rodape-titu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 50px 0px;
+}
+ 
+.rodape-titu h2{
+    padding: 50px 0px 50px 0px;
+    font-size: 35px;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.botao-assinar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: 58px;
+    width: 230px;
+    color: #ffffff;
+    background-color: #EBC154;
+    border-radius: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    user-select: none;
+    margin-left: 10px;
+   
+}
+
+.rodape-pesq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.rodape-pesq input {
+    height: 50px;
+    width: 384px;
+    background-color: black;
+    border-radius: 30px;
+    color: #ffffff;
+    padding-left: 20px;
+    font-size: 24px;
+    outline: none;
+   
+
+}
+
+.linha{
+  width: 100%; 
+  border-bottom: 1px solid #ffffff; 
+   margin: 1px 0px 1px 0px;
+
+}
+
+.text-acima{
+    display: flex;
+     color: #ffffff;
+     justify-content: space-between;
+     margin: 10px 0px 10px 0px;
+}
+
+.grupo-itens ul{
+    display: flex;
+list-style-type: none;
+margin-bottom: 0px;
+
+}
+
+.grupo-itens li{
+    margin: 46px;
+    font-size: 16px;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.grupo-logo{
+    margin-bottom: 0px;
 }
