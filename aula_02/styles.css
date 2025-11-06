@@ -144,7 +144,7 @@ body {
     border-radius: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     user-select: none;
-  
+
 }
 
 .card-conterni {
@@ -162,7 +162,7 @@ body {
     width: 40%;
 }
 
-.card-cachorro2 img{
+.card-cachorro2 img {
     height: 800px;
     width: 700px;
     border-radius: 20px;
@@ -179,22 +179,22 @@ body {
 
 }
 
-.card-texto h2{
+.card-texto h2 {
     font-size: 31px;
     font-weight: bold;
     margin-block-start: 1px;
 }
 
 .card-texto h3,
-.card-texto p{
+.card-texto p {
     font-size: 28px;
-   color: #5c5c5c;
+    color: #5c5c5c;
 }
 
-.rodape{
- background-color: black;
- height: 637px;
- width: 100%;
+.rodape {
+    background-color: black;
+    height: 637px;
+    width: 100%;
 }
 
 .rodape-titu {
@@ -203,15 +203,15 @@ body {
     align-items: center;
     margin: 100px 0px 50px 0px;
 }
- 
-.rodape-titu h2{
+
+.rodape-titu h2 {
     padding: 50px 0px 50px 0px;
     font-size: 35px;
     color: #ffffff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.botao-assinar{
+.botao-assinar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,62 +220,155 @@ body {
     width: 230px;
     color: #ffffff;
     background-color: #EBC154;
-    border-radius: 70px;
+    border-radius: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 28px;
     user-select: none;
     margin-left: 10px;
-   
+
+}
+
+.rodape-menu{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 30px;
 }
 
 .rodape-pesq {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .rodape-pesq input {
     height: 50px;
     width: 384px;
     background-color: black;
-    border-radius: 30px;
+    border-radius: 10px;
     color: #ffffff;
     padding-left: 20px;
     font-size: 24px;
     outline: none;
-   
+
 
 }
 
-.linha{
-  width: 100%; 
-  border-bottom: 1px solid #ffffff; 
-   margin: 1px 0px 1px 0px;
+.linha {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    margin: 1px 0px 1px 0px;
 
 }
 
-.text-acima{
+.text-acima {
     display: flex;
-     color: #ffffff;
-     justify-content: space-between;
-     margin: 10px 0px 10px 0px;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.grupo-itens ul{
+.grupo-itens{
+    margin-right: 50px;
+}
+
+.grupo-selec{
+    color: #EBC154;
+}
+
+
+.grupo-itens ul {
     display: flex;
-list-style-type: none;
-margin-bottom: 0px;
+    list-style-type: none;
+    margin-bottom: 0px;
 
 }
 
-.grupo-itens li{
-    margin: 46px;
-    font-size: 16px;
-    
+.grupo-itens li {
+    margin-left: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.grupo-logo{
-    margin-bottom: 0px;
+.grupo-logo {
+    margin-left: 30px;
+
+}
+
+.grupo-logo p {
+    margin-block-end: 3px;
+}
+
+.rodape-redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 0px 0px ;
+}
+
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+    background-color: #EBC154;
+    border-radius: 100%;
+    fill: #ffffff;
+    margin: 25px;
+    cursor: pointer;
+
+}
+
+.icone svg{
+    height: 50px;
+    width: 50px;
+
+}
+
+/* ____________________________________________________ */
+/* login pet shop */
+
+.pagina{
+    display: flex;
+}
+
+.bem-vindo{
+    background-image: url(./imagens/pug.jpg);
+    background-size: cover;
+    height: 832px;
+    width: 40%;
+}
+
+.bem-vindo h1{
+    text-align: center;
+    margin: 100px;
+}
+
+.logar{
+    height:832px ;
+    width: 60%;
+}
+
+.text-logar{
+    display: flex;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 90px ;
+}
+
+.opcaes-login {
+    
+
+}
+
+.opcoes-login {
+    height: 52px;
+    width: 100px;
+    width: 379px;
+    border-radius: 50px;
+    border: solid 1px #000000;
 }
