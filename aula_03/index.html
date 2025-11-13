@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <title>Java-Script</title>
+</head>
+
+<body>
+    <div class="calculador">
+    <input id="campo1" type="number">
+    <input id="campo2" type="number">
+    <button onclick="soma()">somar</button>
+    <p id="Resultado">Resultado</p>
+
+    <br>
+    <button>9</button>
+    <button>8</button>
+    <button>7</button>
+    <br>
+    <button>6</button>
+    <button>5</button>
+    <button>4</button>
+    <br>
+    <button>3</button>
+    <button>2</button>
+    <button>1</button>
+    </div>
+
+    <script>
+        function soma() {
+            var pagina = document;
+            var campo1 = pagina.getElementById('campo1');
+            var campo2 = pagina.getElementById('campo2');
+            var Resultado = pagina.getElementById('Resultado');
+
+            if (!Number(campo1.value)) {
+                campo1.classList.add('input-erro');
+            } else if (!Number(campo2.value)) {
+                campo2.classList.add('input-erro')
+            } else {
+                Resultado.innerHTML = "A soma dos dois valores é: " + (Number(campo1) + Number(campo2));
+            }
+
+        }
+
+
+
+    </script>
+
+    <style>
+
+    .input-erro{
+        border: 2px solid rgb(223, 40, 40);
+
+    }
+    .calculador{
+        border: 1px solid black;
+        height:900px ;
+        width:700px ;
+    }
+
+    </style>
+
+</body>
+
+</html>
