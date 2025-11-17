@@ -3,36 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" >
+    <meta name="viewport">
     <title>Java-Script</title>
 </head>
 
 <body>
-    <div class="calculador">
-    <input id="campo1" type="number">
-    <input id="campo2" type="number">
-    <button onclick="soma()">somar</button>
+
+    
     <p id="Resultado">Resultado</p>
 
-    <br>
-    <button>9</button>
-    <button>8</button>
-    <button>7</button>
-    <br>
-    <button>6</button>
-    <button>5</button>
-    <button>4</button>
-    <br>
-    <button>3</button>
-    <button>2</button>
-    <button>1</button>
+
+    <div class="calculador">
+        <input type="text" id="calc">
+        <div class="botao-num">
+            <br>
+            <div class="calculadora-line">
+                <button onclick="aplicaValor(9)"style="background-color: #FF6663;">9</button>
+                <button onclick="aplicaValor(8)" style="background-color: #FFC067;">8</button>
+                <button onclick="aplicaValor(7)"style="background-color: #FDFD97;">7</button>
+                <button onclick="aplicaValor(valor)"style="background-color:	#B0E0A8;">/</button>
+            </div>
+            
+            <div class="calculadora-line">
+                <button onclick="aplicaValor(6)"style="background-color: #AEC6CF;">6</button>
+                <button onclick="aplicaValor(5)"style="background-color: #CC99C9;">5</button>
+                <button onclick="aplicaValor(4)"style="background-color: rgb(255, 96, 128);">4</button>
+                <button onclick="aplicaValor(valor)"style="background-color: rgb(255, 96, 128);">X</button>
+            </div>
+            <div class="calculadora-line">
+            <button onclick="aplicaValor(3)"style="background-color: rgb(255, 96, 128);">3</button>
+            <button onclick="aplicaValor(2)"style="background-color: rgb(255, 96, 128);">2</button>
+            <button onclick="aplicaValor(1)"style="background-color: rgb(255, 96, 128);">1</button>
+            <button onclick="aplicaValor(valor)"style="background-color: rgb(255, 96, 128);">-</button>
+            </div>
+
+            <div class="calculadora-line">
+            <button onclick="aplicaValor(valor)"style="background-color: rgb(255, 96, 128);">+</button>
+            <button onclick="aplicaValor(valor)"style="background-color: rgb(255, 96, 128);">=</button>
+            
+            </div>
+
+        </div>
     </div>
 
     <script>
         function soma() {
             var pagina = document;
-            var campo1 = pagina.getElementById('campo1');
-            var campo2 = pagina.getElementById('campo2');
+            var campo1 = pagina.getElementById('campo1').value;
+            var campo2 = pagina.getElementById('campo2').value;
             var Resultado = pagina.getElementById('Resultado');
 
             if (!Number(campo1.value)) {
@@ -42,25 +60,95 @@
             } else {
                 Resultado.innerHTML = "A soma dos dois valores é: " + (Number(campo1) + Number(campo2));
             }
+        }
+
+        function subitraçao() {
+            var pagina = document;
+            var campo1 = pagina.getElementById('campo1').value;
+            var campo2 = pagina.getElementById('campo2').value;
+            var Resultado = pagina.getElementById('Resultado');
+
+            if (!Number(campo1.value)) {
+                campo1.classList.add('input-erro');
+            } else if (!Number(campo2.value)) {
+                campo2.classList.add('input-erro')
+            } else {
+                Resultado.innerHTML = "A soma dos dois valores é: " + (Number(campo1) - Number(campo2));
+            }
+        }
+        function divisao() {
+            var pagina = document;
+            var campo1 = pagina.getElementById('campo1').value;
+            var campo2 = pagina.getElementById('campo2').value;
+            var Resultado = pagina.getElementById('Resultado');
+
+            if (!Number(campo1.value)) {
+                campo1.classList.add('input-erro');
+            } else if (!Number(campo2.value)) {
+                campo2.classList.add('input-erro')
+            } else {
+                Resultado.innerHTML = "A soma dos dois valores é: " + (Number(campo1) / Number(campo2));
+            }
+        }
+
+        function multiplicaçao() {
+            var pagina = document;
+            var campo1 = pagina.getElementById('campo1').value;
+            var campo2 = pagina.getElementById('campo2').value;
+            var Resultado = pagina.getElementById('Resultado');
+
+            if (!Number(campo1.value)) {
+                campo1.classList.add('input-erro');
+            } else if (!Number(campo2.value)) {
+                campo2.classList.add('input-erro')
+            } else {
+                Resultado.innerHTML = "A soma dos dois valores é: " + (Number(campo1) * Number(campo2));
+            }
 
         }
 
+        function aplicaValor(valor) {
+            var pagina = document;
+            var campoCalc = pagina.getElementById('calc');
+
+            campoCalc.value = campoCalc.value / valor;
+        }
 
 
     </script>
 
     <style>
+        .input-erro {
+            border: 2px solid rgb(223, 40, 40);
 
-    .input-erro{
-        border: 2px solid rgb(223, 40, 40);
+        }
 
-    }
-    .calculador{
-        border: 1px solid black;
-        height:900px ;
-        width:700px ;
-    }
+        .calculador {
+            text-align: center;
+            border: 2px solid rgb(255, 144, 255);
+            height: 400px;
+            width: 450px; 
+            border-radius: 15px;
+            background-color: rgb(255, 224, 255);
+        }
 
+        .botao-num {
+            /* margin: 60px; */
+            
+        }
+
+        .calculador-line{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .botao-num button {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 15px;
+        }
     </style>
 
 </body>
