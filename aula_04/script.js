@@ -7,10 +7,7 @@ function add() {
     var li = document.createElement('li');
 
     
-    li.innerHTML = `
-        ${campo.value}
-        <button onclick="apagar(this)">X</button>
-    `;
+    li.innerHTML = `${campo.value} <button onclick="apagar(this)"><img src="./Imagens/lixeira.png" alt="Excluir" style="width: 16px; height: 16px;"></button>`;
 
     lista.appendChild(li);
 
