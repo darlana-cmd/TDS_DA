@@ -19,16 +19,10 @@
 
 }
 
-#botao{
-    
-
-}
 
 #campo{
-     display: flex;
-    justify-content: center;
     height: 20px;
-    width: 20;
+    width: 100%;
 }
 
 .color h2{
@@ -53,19 +47,35 @@
     margin: 0px;
     padding: 0px 20px 0px 20px;
 }
-
-#linha {
-    /* display: flex; */
-    /* margin: 10px;
-
-    height: 20px;
-    width: 50px;
-    */
-} 
-
 #cesto {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
      margin: -20px;
      position: relative;
 }
+
+.pai-campo{
+    display: flex;
+    
+}
+
+
+#linha li {
+    margin-top: 10px;
+    list-style: none;
+}
+
+#linha button {
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#linha button:hover{
+    
+    border-radius: 10%;
+    border: 1px solid #000000;
+}
+
+

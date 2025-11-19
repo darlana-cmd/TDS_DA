@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./Imagens/cesto-superMercado.png">
     <title>Lista</title>
 </head>
 
@@ -12,13 +13,15 @@
 
     <div class="lista">
         <img id="cesto" src="./Imagens/cesto-superMercado.png" alt="cesto">
-            
+
 
         <div class="color">
-            <h2>Adicione seus itens:</h2>
-            <input id="campo" type="text">
-            <button id="9"onclick="add()">Adicionar</button>
-            <div id="linha">  
+            <h2>Checklist de compras:</h2>
+            <div class="pai-campo">
+                <input id="campo" type="text">
+                <button  onclick="add()">Adicionar</button>
+            </div>
+            <div id="linha">
                 <ul id="itens"></ul>
             </div>
         </div>
